@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salmon Sashimi Game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+  <div class="hud">
+    <div id="score">Score: 0</div>
+    <div id="timer">Time: 60</div>
+  </div>
+
+  <div id="overlay" class="overlay">
+    <div class="overlay-box">
+      <h1>Salmon Sashimi</h1>
+      <button id="playBtn" class="play-btn" type="button">Play</button>
+      <p>Serve as many correct plates as you can in 60 seconds.</p>
+      <p>Use the trays to build salmon, wasabi, and flakes on the board, then press Serve.</p>
+    </div>
+  </div>
+
+  <div id="timesUp" class="times-up">
+    <div class="times-up-box">
+      <div class="times-up-text">TIME'S UP!</div>
+      <button id="replayBtn" class="play-btn" type="button">Replay</button>
+    </div>
+  </div>
+
+  <div id="successOverlay" class="success-overlay"></div>
+
+  <div id="board" class="board">
+    <img
+      id="boardImage"
+      src="https://raw.githubusercontent.com/rmbamba2029/sashimi/refs/heads/main/Untitled26_20260215214959.jpg"
+      alt="board"
+    >
+  </div>
+
+  <button id="wasabiBtn" class="click-zone" type="button"></button>
+  <button id="salmonBtn" class="click-zone" type="button"></button>
+  <button id="flakesBtn" class="click-zone" type="button"></button>
+
+  <div class="controls">
+    <button id="clearBtn" class="clear-btn" type="button">Clear</button>
+    <button id="pauseBtn" class="clear-btn" type="button">Pause</button>
+    <button id="serveBtn" class="check-btn" type="button">Serve</button>
+  </div>
+
+  <div id="message" class="message"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>

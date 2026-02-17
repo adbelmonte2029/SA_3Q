@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  background-color: #c8b28f;
+}
+
+.hud {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-size: 20px;
+  color: #2f5d3a;
+}
+
+.board {
+  position: fixed;
+  inset: 40px 0 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.board img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.message {
+  position: fixed;
+  bottom: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #3c6446;
+  min-height: 24px;
+}
+
+.click-zone {
+  position: fixed;
+  bottom: 120px;
+  width: 120px;
+  height: 90px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#wasabiBtn {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -230px;
+}
+
+#salmonBtn {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -90px;
+}
+
+#flakesBtn {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 230px;
+}
+
+.controls {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+button.clear-btn,
+button.check-btn,
+button.play-btn {
+  padding: 8px 22px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-btn {
+  background: #f07f7f;
+  color: #ffffff;
+}
+
+.check-btn {
+  background: #5bb05b;
+  color: #ffffff;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-box {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.play-btn {
+  background: #5bb05b;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.times-up {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.times-up-box {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 24px 32px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.times-up-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.success-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 255, 0, 0.25);
+  display: none;
+  pointer-events: none;
+}

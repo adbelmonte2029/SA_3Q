@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: "PLayfair Display", serif;
+   
+    background-color: #f6fffc;
+    background-size: cover;
+    align-items: center;
+    height: 300px;
+}
+
+.screen {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.game-title {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 300px;
+    color:#1b6ca8;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+.two-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-btn {
+    padding: 12px 36px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #06d6a0;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.start-btn {
+    background-color: #e4f8f0;
+    color: #06d6a0;
+    border: 2px solid #06d6a0;
+}
+
+.start-btn:hover {
+    background-color: #bbffe4;
+}
+
+.authors-btn {
+    background-color: #e4f8f0;
+    color: #06d6a0;
+}
+
+.authors-btn:hover {
+    background-color: #bbffe4;
+
+}
